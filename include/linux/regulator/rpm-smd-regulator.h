@@ -86,6 +86,8 @@ enum rpm_regulator_mode {
 
 static void rpm_vreg_create_debugfs(struct rpm_regulator *reg);
 
+int rpm_smd_regulator_driver_init(void);
+
 #else
 
 static inline void rpm_vreg_create_debugfs(struct rpm_regulator *reg)
