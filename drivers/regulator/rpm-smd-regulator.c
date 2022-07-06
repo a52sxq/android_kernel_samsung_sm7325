@@ -1942,7 +1942,7 @@ static struct platform_driver rpm_vreg_resource_driver = {
  *
  * Returns 0 on success or errno on failure.
  */
-static int __init rpm_smd_regulator_driver_init(void)
+int rpm_smd_regulator_driver_init(void)
 {
 	static bool initialized;
 	int i, rc;
